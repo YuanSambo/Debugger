@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject[] bug;
+    public GameObject[] Bug;
+    public FloatVariable SpawnRate;
     int randomIndex;
     Vector3 spawnLoc;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Spawn", 2f, 0.5f);
+        InvokeRepeating("Spawn", 2f, 1f);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        randomIndex = Random.Range(0, bug.Length);
-        spawnLoc = new Vector3(Random.Range(-2, 2),5, 0);
+        randomIndex = Random.Range(0, Bug.Length);
+        spawnLoc = new Vector3(Random.Range(-2, 2), 5, 0);
     }
 
     void Spawn()
     {
-        Instantiate(bug[randomIndex], spawnLoc, bug[randomIndex].transform.rotation);
+        Instantiate(Bug[randomIndex], spawnLoc, Bug[randomIndex].transform.rotation);
     }
 }
