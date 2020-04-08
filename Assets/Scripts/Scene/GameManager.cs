@@ -11,7 +11,14 @@ public class GameManager : MonoBehaviour
     public void ChangeBattleScene()
     {
         SceneManager.LoadScene("Battle");
+       
     }
+
+    public void ChangeMenuScene()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
 
     public void RestartGame()
     {
