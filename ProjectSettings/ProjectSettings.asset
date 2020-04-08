@@ -278,117 +278,130 @@ PlayerSettings:
   androidGamepadSupportLevel: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: a7220ce0f38c9409283faf3493d2fe33, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:
-    - m_Textures: []
-      m_Width: 192
-      m_Height: 192
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 144
-      m_Height: 144
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 96
-      m_Height: 96
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 72
-      m_Height: 72
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 48
-      m_Height: 48
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 36
-      m_Height: 36
-      m_Kind: 0
-      m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 10ff8d69d93b048e8abb2c93925ffc29, type: 3}
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: 30062a25f36a54ae8b769cb790f16253, type: 3}
+      - {fileID: 2800000, guid: b1b36ab285722430aace8a05321fc292, type: 3}
       m_Width: 432
       m_Height: 432
       m_Kind: 2
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 10ff8d69d93b048e8abb2c93925ffc29, type: 3}
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: 30062a25f36a54ae8b769cb790f16253, type: 3}
+      - {fileID: 2800000, guid: 3a54613afab9a411989934ca089c8b02, type: 3}
       m_Width: 324
       m_Height: 324
       m_Kind: 2
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 10ff8d69d93b048e8abb2c93925ffc29, type: 3}
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: 30062a25f36a54ae8b769cb790f16253, type: 3}
+      - {fileID: 2800000, guid: 21837a5f755b84437916e99b9b99587f, type: 3}
       m_Width: 216
       m_Height: 216
       m_Kind: 2
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 10ff8d69d93b048e8abb2c93925ffc29, type: 3}
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: 30062a25f36a54ae8b769cb790f16253, type: 3}
+      - {fileID: 2800000, guid: 959a93e9c5ad04353bf8b5ba38ecc3ba, type: 3}
       m_Width: 162
       m_Height: 162
       m_Kind: 2
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 10ff8d69d93b048e8abb2c93925ffc29, type: 3}
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: 30062a25f36a54ae8b769cb790f16253, type: 3}
+      - {fileID: 2800000, guid: 701922916abd34665bc81c6ceae6fc75, type: 3}
       m_Width: 108
       m_Height: 108
       m_Kind: 2
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 10ff8d69d93b048e8abb2c93925ffc29, type: 3}
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: 30062a25f36a54ae8b769cb790f16253, type: 3}
+      - {fileID: 2800000, guid: 1dfccc944b9c24079b34f4e967dba89f, type: 3}
       m_Width: 81
       m_Height: 81
       m_Kind: 2
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: 85b9fe22615144c97974d2934d99a063, type: 3}
       m_Width: 192
       m_Height: 192
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: 5892114bce54c4bd5a707f5504b60e2e, type: 3}
       m_Width: 144
       m_Height: 144
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: 364105605504d4d288c6529996cc7619, type: 3}
       m_Width: 96
       m_Height: 96
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: d65e99c17914c4c61a7f961bca569854, type: 3}
       m_Width: 72
       m_Height: 72
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: a7220ce0f38c9409283faf3493d2fe33, type: 3}
       m_Width: 48
       m_Height: 48
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+      - {fileID: 2800000, guid: 210604444b66d4cfea49d0b5dc4bfb73, type: 3}
       m_Width: 36
       m_Height: 36
       m_Kind: 1
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 85b9fe22615144c97974d2934d99a063, type: 3}
+      m_Width: 192
+      m_Height: 192
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 5892114bce54c4bd5a707f5504b60e2e, type: 3}
+      m_Width: 144
+      m_Height: 144
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 364105605504d4d288c6529996cc7619, type: 3}
+      m_Width: 96
+      m_Height: 96
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: d65e99c17914c4c61a7f961bca569854, type: 3}
+      m_Width: 72
+      m_Height: 72
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: a7220ce0f38c9409283faf3493d2fe33, type: 3}
+      m_Width: 48
+      m_Height: 48
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: 210604444b66d4cfea49d0b5dc4bfb73, type: 3}
+      m_Width: 36
+      m_Height: 36
+      m_Kind: 0
       m_SubKind: 
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsJobs:
