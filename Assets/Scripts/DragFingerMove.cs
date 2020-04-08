@@ -24,10 +24,12 @@ public class DragFingerMove : MonoBehaviour
             touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
             touchPosition.z = 0;
             direction = (touchPosition - transform.position);
+
             if(touch.phase == TouchPhase.Moved)
             {
                 rb.velocity = new Vector2(direction.x, direction.y) * moveSpeed;
             }
+
 
             if (touch.phase == TouchPhase.Ended)
                 rb.velocity = Vector2.zero;
