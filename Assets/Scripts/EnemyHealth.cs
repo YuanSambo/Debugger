@@ -5,20 +5,19 @@ using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public FloatReference enemyHealth;
     public UnityEvent EnemyDeathEvent;
     private float hp;
+    public float enemyHealth;
+
     // Start is called before the first frame update
     void Start()
     {
-        hp = enemyHealth.Value;
+
+        hp = enemyHealth;
     }
 
     // Update is called once per frame
-    void Update()
-    {
 
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -32,7 +31,7 @@ public class EnemyHealth : MonoBehaviour
                 Destroy(gameObject);
                 EnemyDeathEvent.Invoke();
             }
-            
+
 
         }
 

@@ -136,10 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: aef34cf001152594e9668eb5e0df1d31, type: 2}
-  speed:
-    UseConstant: 0
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: d790a1eaa7aac3a4cbc065ae400a2a9c, type: 2}
+  speed: 0
 --- !u!114 &3042229560022770992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth:
-    UseConstant: 1
+    UseConstant: 0
     ConstantValue: 2
     Variable: {fileID: 0}
   EnemyDeathEvent:

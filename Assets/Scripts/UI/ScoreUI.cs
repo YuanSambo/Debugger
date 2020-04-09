@@ -5,18 +5,27 @@ using UnityEngine.UI;
 
 public class ScoreUI : MonoBehaviour
 {
-    private int score = 0;
+    public FloatVariable scoreData;
+    public bool ResetScore;
     private Text ScoreText;
 
     void Start()
     {
         ScoreText = GetComponent<Text>();
+        if (ResetScore)
+        {
+            scoreData.initialValue = 0;
+        }
+
     }
 
+    private void Update()
+    {
+        ScoreText.text = $"Score : {scoreData.initialValue}";
 
+    }
     public void Score(EnemyData enemy)
     {
-        score+=enemy.Points;
-        ScoreText.text = $"Score : {score}";
+        scoreData.initialValue += enemy.Points;
     }
 }

@@ -7,11 +7,11 @@ public class GameManager : MonoBehaviour
 {
 
 
-    
+
     public void ChangeBattleScene()
     {
         SceneManager.LoadScene("Battle");
-       
+
     }
 
     public void ChangeMenuScene()
@@ -20,9 +20,9 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void RestartGame()
+    public void Stage2()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
+        SceneManager.LoadScene("Battle2");
     }
 
     public void PauseGame()

@@ -7,10 +7,15 @@ public class PlayerHealth : MonoBehaviour
 {
     public FloatVariable health;
     public GameEvent PlayerDeathEvent;
+    public bool ResetHP;
 
     private void Start()
     {
-        health.Value = health.initialValue;
+        if (ResetHP)
+        {
+            health.Value = health.initialValue;
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,14 +23,18 @@ public class PlayerHealth : MonoBehaviour
 
         if (collision.CompareTag("Enemy"))
         {
+
             Destroy(collision.gameObject);
             health.SetValue(--health.Value);
             if (health.Value == 0)
             {
                 PlayerDeathEvent.Raise();
             }
+
         }
     }
+
+
 
 
 

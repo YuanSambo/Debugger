@@ -4,25 +4,67 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject[] Bug;
-    int randomIndex;
-    Vector3 spawnLoc;
-    // Start is called before the first frame update
+
+    public GameObject[] SingleBug;
+    public GameObject[] SteadyBug;
+    public GameObject[] BossBug;
+
+
+    bool BossTime;
+
+
     void Start()
     {
-        InvokeRepeating("Spawn", 2f, 1f);
 
+        InvokeRepeating("SpawnSingle", 1f, 1f);
+        InvokeRepeating("SpawnSteady", 15, 5f);
+        InvokeRepeating("SpawnBoss", 30f, 30f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        randomIndex = Random.Range(0, Bug.Length);
-        spawnLoc = new Vector3(Random.Range(-2, 3), 5, 0);
+
+
+        if (BossTime)
+        {
+            CancelInvoke("SpawnSingle");
+            CancelInvoke("SpawnSteady");
+        }
+
+
+
+
+
     }
 
-    void Spawn()
+
+
+    void SpawnSingle()
     {
-        Instantiate(Bug[randomIndex], spawnLoc, Bug[randomIndex].transform.rotation);
+        var randomIndex = Random.Range(0, SingleBug.Length);
+        var spawnLoc = new Vector3(Random.Range(-2, 3), 5, 0);
+        Instantiate(SingleBug[randomIndex], spawnLoc, SingleBug[randomIndex].transform.rotation);
+
     }
+
+    void SpawnSteady()
+    {
+        var randomIndex = Random.Range(0, SteadyBug.Length);
+        for (int i = -2; i < 3; i++)
+        {
+            Instantiate(SteadyBug[randomIndex], new Vector3(i, 5, 0), SteadyBug[randomIndex].transform.rotation);
+
+        }
+
+
+    }
+
+    void SpawnBoss()
+    {
+        var randomIndex = Random.Range(0, BossBug.Length);
+        Instantiate(BossBug[randomIndex], new Vector3(0, 5, 0), BossBug[randomIndex].transform.rotation);
+        BossTime = true;
+    }
+
 }

@@ -5,12 +5,17 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     public EnemyData data;
-    private SpriteRenderer sprite;
-    public FloatReference speed;
+    SpriteRenderer sprite;
+    [HideInInspector]
+    EnemyHealth health;
+    float speed;
     // Start is called before the first frame update
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        health = GetComponent<EnemyHealth>();
+        health.enemyHealth = data.Health;
+        speed = data.speed;
         sprite.sprite = data.Sprite;
 
     }

@@ -4,8 +4,12 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class EnemyData : ScriptableObject
+
 {
+
     public Sprite Sprite;
-    public int Health;
+    public float Health;
     public int Points;
+    public float speed;
+
 }
