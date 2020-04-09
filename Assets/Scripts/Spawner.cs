@@ -5,7 +5,6 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject[] Bug;
-    public FloatVariable SpawnRate;
     int randomIndex;
     Vector3 spawnLoc;
     // Start is called before the first frame update
@@ -19,7 +18,7 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         randomIndex = Random.Range(0, Bug.Length);
-        spawnLoc = new Vector3(Random.Range(-2, 2), 5, 0);
+        spawnLoc = new Vector3(Random.Range(-2, 3), 5, 0);
     }
 
     void Spawn()
