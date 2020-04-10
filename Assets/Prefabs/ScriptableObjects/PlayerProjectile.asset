@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa56138ecb20cbc4ab404d8a6be0d9e8, type: 3}
-  m_Name: BlackBug
+  m_Script: {fileID: 11500000, guid: 0bfe3ed9e485fab4bb3529b4fe394875, type: 3}
+  m_Name: PlayerProjectile
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 17766945f64d842d1ac08cbf0c5ba32f, type: 3}
-  Health: 50
-  Points: 10
-  speed: 1
+  speed: 20
+  sprite: {fileID: 21300000, guid: 27cfba443571c4ed48922e4a5f72fbd8, type: 3}

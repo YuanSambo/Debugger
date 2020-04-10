@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc7379fa9cb4d344e8ab76a61a42af97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _projectile: {fileID: 2688541262072538450, guid: 6fca089ee6cdd4547b2f1930c433cb73,
+  _projectile: {fileID: 2688541262072538450, guid: 20ad8bd64a908e540934d1a06d4be123,
     type: 3}
   fireRate: 0.8
 --- !u!114 &-8928373325348914337
@@ -177,6 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 11400000, guid: 6540f4ec1be0d1543a98db6550aa2af7, type: 2}
   PlayerDeathEvent: {fileID: 11400000, guid: faf21ff80c9b02642a3b5af45e53e19b, type: 2}
+  ResetHP: 0
 --- !u!114 &-8810877145419478727
 MonoBehaviour:
   m_ObjectHideFlags: 0

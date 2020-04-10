@@ -2554,24 +2554,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993493911}
   m_CullTransparentMesh: 0
---- !u!1 &1016167668 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2490216837790330097, guid: 713fd016686d4455595e7cefbe371ef3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2490216838589558973}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1016167677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016167668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 096470014b12ffc40b74b26d02ab49d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1183031037
 GameObject:
   m_ObjectHideFlags: 0
@@ -4115,11 +4097,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781186154}
     m_Modifications:
-    - target: {fileID: -8928373325348914337, guid: 713fd016686d4455595e7cefbe371ef3,
-        type: 3}
-      propertyPath: ResetHP
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -8810877145419478727, guid: 713fd016686d4455595e7cefbe371ef3,
         type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_Target

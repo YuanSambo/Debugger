@@ -21,16 +21,20 @@ public class PlayerHealth : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") || collision.CompareTag("Projectile"))
         {
-
             Destroy(collision.gameObject);
             health.SetValue(--health.Value);
-            if (health.Value == 0)
-            {
-                PlayerDeathEvent.Raise();
-            }
+        }
 
+        else if (collision.CompareTag("Boss"))
+        {
+            health.SetValue(--health.Value);
+
+        }
+        if (health.Value == 0)
+        {
+            PlayerDeathEvent.Raise();
         }
     }
 
