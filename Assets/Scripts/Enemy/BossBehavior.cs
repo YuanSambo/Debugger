@@ -26,9 +26,9 @@ public class BossBehavior : MonoBehaviour
     void BossAttack()
     {
 
-        Instantiate(projectile, transform.position + new Vector3(0, -1.5f), transform.rotation);
-        Instantiate(projectile, transform.position + new Vector3(0, -1.5f), Quaternion.Euler(0, 0, 150));
-        Instantiate(projectile, transform.position + new Vector3(0, -1.5f), Quaternion.Euler(0, 0, 210));
+        Instantiate(projectile, transform.position + new Vector3(0, -1f), transform.rotation);
+        Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 150));
+        Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 210));
 
 
 
