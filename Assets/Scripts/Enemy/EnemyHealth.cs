@@ -12,7 +12,6 @@ public class EnemyHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         hp = enemyHealth;
     }
 
@@ -28,8 +27,8 @@ public class EnemyHealth : MonoBehaviour
             Destroy(other.gameObject);
             if (hp <= 0)
             {
-                Destroy(gameObject);
                 EnemyDeathEvent.Invoke();
+                Destroy(gameObject);
             }
 
 

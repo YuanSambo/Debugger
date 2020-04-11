@@ -8,7 +8,7 @@ public class BossBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("BossAttack", 3f, 5f);
+        InvokeRepeating("BossAttack", 3f, 3f);
     }
 
     // Update is called once per frame

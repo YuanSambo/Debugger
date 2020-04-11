@@ -15,7 +15,6 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-
         InvokeRepeating("SpawnSingle", 1f, 1f);
         InvokeRepeating("SpawnSteady", 15, 5f);
         InvokeRepeating("SpawnBoss", 30f, 30f);
@@ -43,7 +42,7 @@ public class Spawner : MonoBehaviour
     void SpawnSingle()
     {
         var randomIndex = Random.Range(0, SingleBug.Length);
-        var spawnLoc = new Vector3(Random.Range(-2, 3), 5, 0);
+        var spawnLoc = new Vector3(Random.Range(-2, 3), 6, 0);
         Instantiate(SingleBug[randomIndex], spawnLoc, SingleBug[randomIndex].transform.rotation);
 
     }
@@ -53,7 +52,7 @@ public class Spawner : MonoBehaviour
         var randomIndex = Random.Range(0, SteadyBug.Length);
         for (int i = -2; i < 3; i++)
         {
-            Instantiate(SteadyBug[randomIndex], new Vector3(i, 5, 0), SteadyBug[randomIndex].transform.rotation);
+            Instantiate(SteadyBug[randomIndex], new Vector3(i, 6, 0), SteadyBug[randomIndex].transform.rotation);
 
         }
 
@@ -63,7 +62,7 @@ public class Spawner : MonoBehaviour
     void SpawnBoss()
     {
         var randomIndex = Random.Range(0, BossBug.Length);
-        Instantiate(BossBug[randomIndex], new Vector3(0, 5, 0), BossBug[randomIndex].transform.rotation);
+        Instantiate(BossBug[randomIndex], new Vector3(0, 6, 0), BossBug[randomIndex].transform.rotation);
         BossTime = true;
     }
 

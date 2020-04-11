@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: LadyBug
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
-  Health: 2
+  Health: 3
   Points: 1
   speed: 3
-  type: 0
