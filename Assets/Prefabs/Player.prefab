@@ -162,7 +162,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectile: {fileID: 2688541262072538450, guid: 20ad8bd64a908e540934d1a06d4be123,
     type: 3}
-  fireRate: 0.8
+  fireRate: 0.7
+  isDouble: 0
 --- !u!114 &-8928373325348914337
 MonoBehaviour:
   m_ObjectHideFlags: 0

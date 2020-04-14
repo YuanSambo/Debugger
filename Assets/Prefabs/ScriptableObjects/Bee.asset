@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa56138ecb20cbc4ab404d8a6be0d9e8, type: 3}
-  m_Name: LadyBug
+  m_Name: Bee
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
+  Sprite: {fileID: 21300000, guid: f6f01b1155826420eb6165037b3ee98e, type: 3}
   Health: 2
-  Points: 2
-  speed: 2
+  Points: 1
+  speed: 3

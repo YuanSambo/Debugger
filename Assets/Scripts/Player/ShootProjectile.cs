@@ -8,13 +8,13 @@ public class ShootProjectile : MonoBehaviour
     public GameObject _projectile;
     [Range(0, 1)]
     public float fireRate;
-    private float timeStamp;
+    private float timeStamp,timeStamp2,duration=5f;
+    public bool isDouble = false;
 
 
     void Start()
     {
-        //InvokeRepeating("Shoot", 1f, fireRate);
-        // Set default Time Stamp
+      
         timeStamp = Time.time + (1 - fireRate);
     }
 
@@ -25,11 +25,38 @@ public class ShootProjectile : MonoBehaviour
         {
             Shoot();
             timeStamp += (1 - fireRate);
+
         }
     }
     private void Shoot()
     {
-        Instantiate(_projectile, transform.position + new Vector3(0, 1, 0), _projectile.transform.rotation);
 
+        if (isDouble)
+        {
+            Instantiate(_projectile, transform.position - new Vector3(0.3f, 0, 0) + new Vector3(0, 1, 0), _projectile.transform.rotation);
+            Instantiate(_projectile, transform.position + new Vector3(0.3f, 0, 0) + new Vector3(0, 1, 0), _projectile.transform.rotation);
+            if (timeStamp2 < Time.time)
+            {
+                isDouble = false;
+            }
+
+        }
+        else
+
+            Instantiate(_projectile, transform.position + new Vector3(0, 1, 0), _projectile.transform.rotation);
+
+           
+
+        }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Power Up"))
+        {
+            Destroy(collision.gameObject);
+            isDouble = true;
+            timeStamp2 = Time.time + duration;
+
+        }
     }
 }
