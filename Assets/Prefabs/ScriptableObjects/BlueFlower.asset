@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa56138ecb20cbc4ab404d8a6be0d9e8, type: 3}
+  m_Name: BlueFlower
+  m_EditorClassIdentifier: 
+  Sprite: {fileID: 21300000, guid: bff0a8605aef92a45b4dbe2958bf9e06, type: 3}
+  Health: 4
+  Points: 1
+  speed: 2

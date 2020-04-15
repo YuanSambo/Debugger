@@ -34,6 +34,7 @@ public class Spawner : MonoBehaviour
             CancelInvoke("SpawnSteady");
         }
 
+      
     }
 
 
@@ -69,7 +70,6 @@ public class Spawner : MonoBehaviour
     {
         dropRate = 0.30f;
         dropChance = Random.Range(0f, 1f);
-        Debug.Log(dropChance);
 
         if (dropChance <= dropRate)
         {

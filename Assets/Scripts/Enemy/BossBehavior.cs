@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossBehavior : MonoBehaviour
 {
     public GameObject projectile;
+    public bool isButterfly;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +26,21 @@ public class BossBehavior : MonoBehaviour
 
     void BossAttack()
     {
+        if (!isButterfly)
+        {
+            Instantiate(projectile, transform.position + new Vector3(0, -1f), transform.rotation);
+            Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 150));
+            Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 210));
+        }
+        else
+        {
+            Instantiate(projectile, transform.position + new Vector3(0, -1f), transform.rotation);
+            Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 120));
+            Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 150));
+            Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 210));
+            Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 240));
 
-        Instantiate(projectile, transform.position + new Vector3(0, -1f), transform.rotation);
-        Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 150));
-        Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 210));
+        }
 
 
 

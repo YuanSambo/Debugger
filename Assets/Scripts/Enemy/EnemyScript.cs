@@ -15,8 +15,8 @@ public class EnemyScript : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
         health = GetComponent<EnemyHealth>();
-        health.enemyHealth = data.Health;
-        speed = data.speed*multiplier.initialValue;
+        health.hp = data.Health;
+        speed = data.speed * multiplier.initialValue;
         sprite.sprite = data.Sprite;
 
     }

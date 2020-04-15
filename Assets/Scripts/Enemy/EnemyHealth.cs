@@ -6,16 +6,8 @@ using UnityEngine.Events;
 public class EnemyHealth : MonoBehaviour
 {
     public UnityEvent EnemyDeathEvent;
-    private float hp;
-    public float enemyHealth;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        hp = enemyHealth;
-    }
-
-    // Update is called once per frame
+    [HideInInspector]
+    public float hp;
 
 
     private void OnTriggerEnter2D(Collider2D other)
