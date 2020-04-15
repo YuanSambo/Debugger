@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
+    public FloatVariable multiplier;
 
 
     public void ChangeBattleScene()
-    { 
+    {
+        multiplier.initialValue = 1;
         SceneManager.LoadScene("Battle");
 
     }
@@ -25,6 +26,13 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Battle2");
     }
 
+    public void Stage3()
+    {
+        multiplier.initialValue+=.5f;
+        SceneManager.LoadScene("Battle3");
+
+
+    }
     public void PauseGame()
     {
         Time.timeScale = 0;

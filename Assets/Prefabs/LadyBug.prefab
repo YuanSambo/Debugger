@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: aef34cf001152594e9668eb5e0df1d31, type: 2}
+  multiplier: {fileID: 11400000, guid: decdc63001eb74782baa362ff40dfe9b, type: 2}
 --- !u!114 &3042229560022770992
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     public EnemyData data;
+    public FloatVariable multiplier;
     SpriteRenderer sprite;
     [HideInInspector]
     EnemyHealth health;
@@ -15,7 +16,7 @@ public class EnemyScript : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         health = GetComponent<EnemyHealth>();
         health.enemyHealth = data.Health;
-        speed = data.speed;
+        speed = data.speed*multiplier.initialValue;
         sprite.sprite = data.Sprite;
 
     }

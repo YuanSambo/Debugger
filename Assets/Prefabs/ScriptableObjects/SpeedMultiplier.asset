@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa56138ecb20cbc4ab404d8a6be0d9e8, type: 3}
-  m_Name: LadyBug
+  m_Script: {fileID: 11500000, guid: 06e2e5536cb86684eaebdf6f4d8bcae2, type: 3}
+  m_Name: SpeedMultiplier
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 03c2ebaa59da44f3cb0f51dc0fcae617, type: 3}
-  Health: 2
-  Points: 1
-  speed: 2
+  initialValue: 1

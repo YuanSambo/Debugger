@@ -20,7 +20,7 @@ public class Spawner : MonoBehaviour
         InvokeRepeating("SpawnSingle", 1f, 1f);
         InvokeRepeating("SpawnSteady", 15, 5f);
         Invoke("SpawnBoss", 30f);
-        InvokeRepeating("SpawnPowerUps", 1f, 3f);
+        InvokeRepeating("SpawnPowerUps", 1f, 4f);
     }
 
     // Update is called once per frame
