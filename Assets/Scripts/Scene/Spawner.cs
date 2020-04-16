@@ -9,6 +9,8 @@ public class Spawner : MonoBehaviour
     public GameObject[] SteadyBug;
     public GameObject[] BossBug;
     public GameObject[] Powerups;
+    GameObject GameManager;
+    AudioSource BossSound;
     float dropRate, dropChance;
 
 
@@ -17,6 +19,8 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
+        GameManager = GameObject.Find("GameManager");
+        BossSound = GetComponent<AudioSource>();
         InvokeRepeating("SpawnSingle", 1f, 1f);
         InvokeRepeating("SpawnSteady", 15, 5f);
         Invoke("SpawnBoss", 30f);
@@ -32,9 +36,10 @@ public class Spawner : MonoBehaviour
         {
             CancelInvoke("SpawnSingle");
             CancelInvoke("SpawnSteady");
+            GameManager.GetComponent<AudioSource>().Stop();
         }
 
-      
+
     }
 
 
@@ -64,6 +69,8 @@ public class Spawner : MonoBehaviour
         var randomIndex = Random.Range(0, BossBug.Length);
         Instantiate(BossBug[randomIndex], new Vector3(0, 6, 0), BossBug[randomIndex].transform.rotation);
         BossTime = true;
+        BossSound.Play();
+
     }
 
     void SpawnPowerUps()

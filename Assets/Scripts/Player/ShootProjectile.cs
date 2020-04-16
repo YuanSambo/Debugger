@@ -8,13 +8,13 @@ public class ShootProjectile : MonoBehaviour
     public GameObject _projectile;
     [Range(0, 1)]
     public float fireRate;
-    private float timeStamp,timeStamp2,duration=5f;
-    public bool isDouble = false;
+    private float timeStamp, timeStamp2, duration = 5f;
+    bool isDouble = false;
 
 
     void Start()
     {
-      
+
         timeStamp = Time.time + (1 - fireRate);
     }
 
@@ -45,13 +45,13 @@ public class ShootProjectile : MonoBehaviour
 
             Instantiate(_projectile, transform.position + new Vector3(0, 1, 0), _projectile.transform.rotation);
 
-           
 
-        }
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Power Up"))
+        if (collision.CompareTag("Power Up"))
         {
             Destroy(collision.gameObject);
             isDouble = true;

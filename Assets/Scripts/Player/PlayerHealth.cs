@@ -6,11 +6,13 @@ using UnityEngine.Events;
 public class PlayerHealth : MonoBehaviour
 {
     public FloatVariable health;
+    AudioSource hurtSound;
     public GameEvent PlayerDeathEvent;
     public bool ResetHP;
 
     private void Start()
     {
+        hurtSound = GetComponent<AudioSource>();
         if (ResetHP)
         {
             health.Value = health.initialValue;
@@ -24,6 +26,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.CompareTag("Enemy") || collision.CompareTag("Projectile"))
         {
             Destroy(collision.gameObject);
+            hurtSound.Play();
             health.SetValue(--health.Value);
         }
 
