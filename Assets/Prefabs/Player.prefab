@@ -163,6 +163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectile: {fileID: 2688541262072538450, guid: 20ad8bd64a908e540934d1a06d4be123,
     type: 3}
+  Projectile2: {fileID: 2688541262072538450, guid: 8bcecca0b8eda5c498cbdeb6987e3e58,
+    type: 3}
   fireRate: 0.7
 --- !u!114 &-8928373325348914337
 MonoBehaviour:
@@ -178,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 11400000, guid: 6540f4ec1be0d1543a98db6550aa2af7, type: 2}
   PlayerDeathEvent: {fileID: 11400000, guid: faf21ff80c9b02642a3b5af45e53e19b, type: 2}
-  ResetHP: 0
+  ResetHP: 1
 --- !u!114 &-8810877145419478727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,11 +209,44 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_MethodName: 
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: CancelInvoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

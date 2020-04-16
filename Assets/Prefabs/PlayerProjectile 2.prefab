@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: -4587856282915925048}
   - component: {fileID: 897215865962828210}
   m_Layer: 0
-  m_Name: PlayerProjectile 1
-  m_TagString: Projectile
+  m_Name: PlayerProjectile 2
+  m_TagString: Projectile2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,13 +75,13 @@ SpriteRenderer:
   m_SortingLayerID: -1091018329
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7550472941382305865, guid: e5efad511a34d254abc814add726b2c0,
+  m_Sprite: {fileID: 5181571790623375139, guid: e5efad511a34d254abc814add726b2c0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1.0625, y: 1.3125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -105,7 +105,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.125, y: 1.5}
-    newSize: {x: 0.16, y: 0.16}
+    newSize: {x: 1.0625, y: 1.3125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 717ab332670546b41964991e6708a235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data: {fileID: 11400000, guid: fa3cff984b1e28e42a41c52f7aa1cb77, type: 2}
+  _data: {fileID: 11400000, guid: 839b93af460ea7249af35d2902aed71e, type: 2}
 --- !u!82 &897215865962828210
 AudioSource:
   m_ObjectHideFlags: 0

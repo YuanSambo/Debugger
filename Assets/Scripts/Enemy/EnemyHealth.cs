@@ -25,7 +25,18 @@ public class EnemyHealth : MonoBehaviour
 
 
         }
+        if (other.tag == "Projectile2")
+        {
+            hp -= 2;
+            Destroy(other.gameObject);
+            if (hp <= 0)
+            {
+                EnemyDeathEvent.Invoke();
+                Destroy(gameObject);
+            }
 
+
+        }
 
 
     }

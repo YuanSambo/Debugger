@@ -5,16 +5,17 @@ using UnityEngine;
 public class ShootProjectile : MonoBehaviour
 {
 
-    public GameObject _projectile;
+    public GameObject _projectile, Projectile2;
+    GameObject Current;
     [Range(0, 1)]
     public float fireRate;
     private float timeStamp, timeStamp2, duration = 5f;
-    bool isDouble = false;
+    bool isDouble = false, isRed = false;
 
 
     void Start()
     {
-
+        Current = _projectile;
         timeStamp = Time.time + (1 - fireRate);
     }
 
@@ -27,23 +28,34 @@ public class ShootProjectile : MonoBehaviour
             timeStamp += (1 - fireRate);
 
         }
+
+        if (isRed)
+        {
+            Current = Projectile2;
+        }
+        else
+        {
+            Current = _projectile;
+        }
     }
     private void Shoot()
     {
+        if (timeStamp2 < Time.time)
+        {
+            isDouble = false;
+            isRed = false;
+        }
 
         if (isDouble)
         {
-            Instantiate(_projectile, transform.position - new Vector3(0.3f, 0, 0) + new Vector3(0, 1, 0), _projectile.transform.rotation);
-            Instantiate(_projectile, transform.position + new Vector3(0.3f, 0, 0) + new Vector3(0, 1, 0), _projectile.transform.rotation);
-            if (timeStamp2 < Time.time)
-            {
-                isDouble = false;
-            }
+            Instantiate(Current, transform.position - new Vector3(0.3f, 0, 0) + new Vector3(0, 1, 0), _projectile.transform.rotation);
+            Instantiate(Current, transform.position + new Vector3(0.3f, 0, 0) + new Vector3(0, 1, 0), _projectile.transform.rotation);
+
 
         }
         else
 
-            Instantiate(_projectile, transform.position + new Vector3(0, 1, 0), _projectile.transform.rotation);
+            Instantiate(Current, transform.position + new Vector3(0, 1, 0), _projectile.transform.rotation);
 
 
 
@@ -55,6 +67,14 @@ public class ShootProjectile : MonoBehaviour
         {
             Destroy(collision.gameObject);
             isDouble = true;
+            timeStamp2 = Time.time + duration;
+
+        }
+
+        if (collision.CompareTag("PowerUp2"))
+        {
+            Destroy(collision.gameObject);
+            isRed = true;
             timeStamp2 = Time.time + duration;
 
         }
