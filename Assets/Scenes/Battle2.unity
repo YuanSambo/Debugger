@@ -2583,7 +2583,7 @@ PrefabInstance:
     - target: {fileID: 1493403913278490494, guid: 557825b63b92b0e439b786e0a897d6fd,
         type: 3}
       propertyPath: Powerups.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1493403913278490494, guid: 557825b63b92b0e439b786e0a897d6fd,
         type: 3}
@@ -2603,6 +2603,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8249873056508546462, guid: 8c1c30a8847a03b48bf65e2fdb90bc6a,
         type: 3}
+    - target: {fileID: 1493403913278490494, guid: 557825b63b92b0e439b786e0a897d6fd,
+        type: 3}
+      propertyPath: SteadyBug.Array.data[0]
+      value: 
+      objectReference: {fileID: 1394645884456075346, guid: 26b3293eef3fbe34f847ee4435b6be11,
+        type: 3}
+    - target: {fileID: 1493403913278490494, guid: 557825b63b92b0e439b786e0a897d6fd,
+        type: 3}
+      propertyPath: Powerups.Array.data[2]
+      value: 
+      objectReference: {fileID: 8249873056508546462, guid: 691dac4fa731d4f48b96b4689836710f,
+        type: 3}
     - target: {fileID: 1493403913278490495, guid: 557825b63b92b0e439b786e0a897d6fd,
         type: 3}
       propertyPath: m_Name
@@ -2613,6 +2625,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 753621aeb13e6c4418e836db6d4e3c71, type: 3}
+    - target: {fileID: 6217871956182159670, guid: 557825b63b92b0e439b786e0a897d6fd,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 557825b63b92b0e439b786e0a897d6fd, type: 3}
 --- !u!114 &1386730874 stripped

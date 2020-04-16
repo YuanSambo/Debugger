@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BlackBug
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 17766945f64d842d1ac08cbf0c5ba32f, type: 3}
-  Health: 50
-  Points: 10
-  speed: 1
+  Health: 2
+  Points: 1
+  speed: 2

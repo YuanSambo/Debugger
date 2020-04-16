@@ -10,7 +10,7 @@ public class ShootProjectile : MonoBehaviour
     [Range(0, 1)]
     public float fireRate;
     private float timeStamp, timeStamp2, duration = 5f;
-    bool isDouble = false, isRed = false;
+    bool isDouble = false, isRed = false, isTriple = false;
 
 
     void Start()
@@ -57,10 +57,17 @@ public class ShootProjectile : MonoBehaviour
 
             Instantiate(Current, transform.position + new Vector3(0, 1, 0), _projectile.transform.rotation);
 
-
-
+        if (isTriple)
+        {
+            for (int i = -2; i < 3; i++)
+            {
+                Instantiate(Current, new Vector3(i, -5, 0), Current.transform.rotation);
+                Instantiate(Current, new Vector3(i, -5, 0), Current.transform.rotation);
+                Instantiate(Current, new Vector3(i, -5, 0), Current.transform.rotation);
+                isTriple = false;
+            }
+        }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Power Up"))
@@ -76,6 +83,13 @@ public class ShootProjectile : MonoBehaviour
             Destroy(collision.gameObject);
             isRed = true;
             timeStamp2 = Time.time + duration;
+
+        }
+
+        if (collision.CompareTag("PowerUp3"))
+        {
+            Destroy(collision.gameObject);
+            isTriple = true;
 
         }
     }

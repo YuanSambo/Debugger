@@ -28,9 +28,12 @@ public class BossBehavior : MonoBehaviour
     {
         if (!isButterfly)
         {
-            Instantiate(projectile, transform.position + new Vector3(0, -1f), transform.rotation);
-            Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 150));
-            Instantiate(projectile, transform.position + new Vector3(0, -1f), Quaternion.Euler(0, 0, 210));
+            Instantiate(projectile, transform.position, transform.rotation);
+            Instantiate(projectile, transform.position, Quaternion.Euler(0, 0, 150));
+            Instantiate(projectile, transform.position, Quaternion.Euler(0, 0, 210));
+            Instantiate(projectile, transform.position + new Vector3(0, -2f), transform.rotation);
+            Instantiate(projectile, transform.position + new Vector3(0, -2f), Quaternion.Euler(0, 0, 150));
+            Instantiate(projectile, transform.position + new Vector3(0, -2f), Quaternion.Euler(0, 0, 210));
         }
         else
         {

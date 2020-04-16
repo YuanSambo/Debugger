@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     public void Stage3()
     {
-        multiplier.initialValue+=.5f;
+        multiplier.initialValue += .3f;
         SceneManager.LoadScene("Battle3");
 
 
