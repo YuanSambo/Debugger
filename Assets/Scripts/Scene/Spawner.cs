@@ -9,6 +9,7 @@ public class Spawner : MonoBehaviour
     public GameObject[] SteadyBug;
     public GameObject[] BossBug;
     public GameObject[] Powerups;
+    public FloatVariable multiplier;
     GameObject GameManager;
     AudioSource BossSound;
     float dropRate, dropChance;
@@ -21,10 +22,10 @@ public class Spawner : MonoBehaviour
     {
         GameManager = GameObject.Find("GameManager");
         BossSound = GetComponent<AudioSource>();
-        InvokeRepeating("SpawnSingle", 3f, 1f);
-        InvokeRepeating("SpawnSteady", 15, 5f);
+        InvokeRepeating("SpawnSingle", 3f, 3f);
+        InvokeRepeating("SpawnSteady", 15, 7f);
         Invoke("SpawnBoss", 30f);
-        InvokeRepeating("SpawnPowerUps", 1f, 3f);
+        InvokeRepeating("SpawnPowerUps", 1f, 4f - multiplier.initialValue);
     }
 
     // Update is called once per frame
